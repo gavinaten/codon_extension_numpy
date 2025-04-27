@@ -1,0 +1,11 @@
+services:
+  dev:
+    build:
+      context: .
+    container_name: codon_example
+    platform: linux/amd64
+    init: true
+    working_dir: /home
+    entrypoint: python3 setup.py build_ext --inplace
+
+# docker compose up --build
