@@ -2,8 +2,8 @@
 
 This repo contains a python code example method we would like to compile into a python extension using [Codon](https://github.com/exaloop/codon).
 
-Codon has numpy support in their [docs](https://docs.exaloop.io/codon/interoperability/numpy) around the use of numpy arrays, but it 
-seems the numpy support is not present for Codon [python extensions](https://docs.exaloop.io/codon/interoperability/pyext).
+Codon has numpy support in their [docs](https://docs.exaloop.io/codon/interoperability/numpy) and mentions support of the use of numpy arrays, but it 
+seems the numpy support is not present for Codon [python extensions](https://docs.exaloop.io/codon/interoperability/pyext) when numpy arrays are used as parameter inputs or return types of methods.
 
 
 Locally, change the `setup.py`line 101 to target either `example.py` or `example.codon`.
